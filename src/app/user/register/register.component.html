@@ -1,0 +1,72 @@
+
+
+<section class="font-inter">
+    <div class="relative flex max-h-full justify-center overflow-hidden md:px-12 lg:px-0">
+        <div class="relative z-10 flex flex-1 flex-col bg-white px-4 py-10 shadow-2xl sm:justify-center md:flex-none md:px-28 lg:py-24">
+            <div class="mx-auto w-full max-w-md sm:px-4 md:w-96 md:max-w-sm md:px-0">
+                <div>
+                    <h2 class="text-4xl text-black">Let's get started!</h2>
+                </div>
+
+                <form class="mt-4 space-y-6">
+
+                    <div>
+                        <label class="mb-3 block text-sm font-medium text-gray-600" for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" [(ngModel)]="signUpObj.firstName" required class="block w-full appearance-none rounded-xl border border-gray-200 bg-white px-6 py-3
+                            text-black placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm" placeholder="First Name" />
+                    </div>
+
+                    <div>
+                        <label class="mb-3 block text-sm font-medium text-gray-600" for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" [(ngModel)]="signUpObj.lastName" required class="block w-full appearance-none rounded-xl border border-gray-200 bg-white px-6 py-3
+                            text-black placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm" placeholder="Last Name" />
+                    </div>
+
+                    <div>
+                        <label class="mb-3 block text-sm font-medium text-gray-600" for="email">Email</label>
+                        <input type="email" id="email" name="email" [(ngModel)]="signUpObj.email" required class="block w-full appearance-none rounded-xl border border-gray-200 bg-white px-6 py-3
+                            text-black placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm" placeholder="Email" />
+                    </div>
+
+                    <div>
+                        <label class="mb-3 block text-sm font-medium text-gray-600" for="password">Password</label>
+                        <input type="password" id="password" name="password" [(ngModel)]="signUpObj.password" required class="block w-full appearance-none rounded-xl border border-gray-200 bg-white px-6
+                            py-3 text-black placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm" placeholder="Password" />
+                    </div>
+
+                    <div>
+                        <label class="mb-3 block text-sm font-medium text-gray-600" for="upload">Profile Picture</label>
+                        <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-300 px-6 py-10">
+                            <div class="text-center">
+                                <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
+                                </svg>
+                                <div class="mt-4 flex text-sm leading-6 text-gray-600">
+                                    <label for="upload" class="focus-within:ring-pink hover:text-lightpink relative cursor-pointer rounded-md bg-white font-semibold text-blue-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2">
+                                        <span>Upload a file</span>
+                                        <input id="upload" name="upload" type="file" class="sr-only" accept=".jpg,.jpeg,.png" />
+                                    </label>
+                                    <p class="pl-1">or drag and drop</p>
+                                </div>
+                                <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button (click)="onRegister()" class="inline-flex w-full items-center justify-center rounded-full border-2 border-black bg-black px-6 py-2.5 text-center text-sm
+                            text-white duration-200 hover:border-black hover:bg-transparent hover:text-black focus:outline-none focus-visible:outline-black
+                            focus-visible:ring-black" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="hidden bg-white sm:contents lg:relative lg:block lg:flex-1">
+            <div class="absolute inset-0 h-full w-full bg-white object-cover overflow-hidden" alt="" height="1866" width="1664">
+
+            </div>
+        </div>
+    </div>
+</section>

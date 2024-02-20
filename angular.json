@@ -72,10 +72,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Horizon.Presentation:build:production"
+              "buildTarget": "Horizon.Presentation:build:production",
+              "proxyConfig": "./proxy.conf.json"
             },
             "development": {
-              "buildTarget": "Horizon.Presentation:build:development"
+              "buildTarget": "Horizon.Presentation:build:development",
+              "proxyConfig": "./proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -106,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "bc6522ee-81ae-4a83-8f2b-f29fb7569ee7"
   }
 }
